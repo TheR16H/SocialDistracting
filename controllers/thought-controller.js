@@ -43,20 +43,20 @@ const thoughtController = {
       });
   },
   deleteThought(req, res) {
-    Thoughts.findOneAndDelete({ _id: req.params.id }) // Use Thoughts here
-      .then((thought) => {
-        if (!thought) {
-          res.status(404).json({ message: 'No thought with that ID' });
-        }
-        return User.findOneAndUpdate(
-          { _id: req.body.userID },
-          { $pull: { thoughts: thought._id } },
-          { new: true }
-        );
-      })
-      .then(() => res.json({ message: 'User and associated thoughts deleted!' })) // Corrected message
-      .catch((err) => res.status(500).json(err));
-  },
+    Thoughts.findOneAndDelete({ _id: req.params.id })
+        .then((thought) => {
+            if (!thought) {
+                return res.status(404).json({ message: 'No thought with that ID' });
+            }
+            return User.findOneAndUpdate(
+                { _id: thought.userID }, // Assuming you have userID stored in the thought
+                { $pull: { thoughts: thought._id } },
+                { new: true }
+            );
+        })
+        .then(() => res.json({ message: 'Thought deleted successfully!' })) // Updated message
+        .catch((err) => res.status(500).json(err));
+},
   addReaction(req, res) {
     Thoughts.findOneAndUpdate( // Use Thoughts here
       { _id: req.params.thoughtId },
@@ -85,4 +85,12 @@ const thoughtController = {
   }
 };
 
-module.exports = thoughtController;
+module.exports = {
+  getAllThoughts,
+  getThoughtById,
+  createThought,
+  updateThought,
+  deleteThought,
+  addReaction,
+  deleteReaction,
+};
