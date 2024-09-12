@@ -1,11 +1,12 @@
-// **User**:
+const {Schema, model} = require("mongoose");
 
-// * `username`
-//   * String
-//   * Unique
-//   * Required
-//   * Trimmed
-
+const userSchema = new Schema({ 
+ username: {
+    type: String,
+    unique: true,
+    required: true,
+    trim: true
+},
 // * `email`
 //   * String
 //   * Required
@@ -20,3 +21,4 @@
 // **Schema Settings**:
 
 // Create a virtual called `friendCount` that retrieves the length of the user's `friends` array field on query.
+})
