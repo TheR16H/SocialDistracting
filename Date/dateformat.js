@@ -1,6 +1,3 @@
-// use this as a reference
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-// using dayjs instead if it works.
 const dayjs = require('dayjs');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
 const advancedFormat = require('dayjs/plugin/advancedFormat');

@@ -34,9 +34,11 @@ Find me on [Github!](https://github.com/TheR16H) for any support or to see any o
 no contributions will be needed for this project.
 
 ## References
-<!-- - [JS docs for mongoose (decoding #1)]https://masteringjs.io/tutorials/mongoose/mongoose-validate-unique-email)
-- [Gist Tutorial(decoding #2) 🫶](https://gist.github.com/TheR16H/97fa17362b404211b7b5b985513e3549)
-- [dayjs](https://www.npmjs.com/package/dayjs) -->
+- [dayjs npm package](https://www.npmjs.com/package/dayjs)
+- [Routes & Controllers](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes)
+- [Regex Tutorial 🫶(for decoding #1)](https://gist.github.com/TheR16H/97fa17362b404211b7b5b985513e3549)
+- [JS docs for mongoose (for decoding #2)](https://masteringjs.io/tutorials/mongoose/mongoose-validate-unique-email)
+
 
 ## License
 <!-- MIT License 🔔
