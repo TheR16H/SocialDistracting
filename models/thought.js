@@ -15,11 +15,25 @@ createdAt: {
     get: (createdAtVal) => dateFormat(createdAtVal),
 },
 username: {
-//   * String
-//   * Required
-
-// * `reactions` (These are like replies)
-//   * Array of nested documents created with the `reactionSchema`
-// **Schema Settings**:
+    type: String,
+    required: true,
+},
+reactions: [reactionSchema], 
+    },
+    {
+        toJSON: {
+          virtuals: true,
+          getters: true,
+        },
+        id: false,
+      }
+    );
 
 // Create a virtual called `reactionCount` that retrieves the length of the thought's `reactions` array field on query.
+thoughtSchema.virtual("reactionCount").get(function () { 
+    return this.reactions.length;
+});
+
+const Thoughts = model("Thoughts", thoughtSchema);
+
+module.exports = Thoughts;
