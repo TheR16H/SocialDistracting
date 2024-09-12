@@ -1,6 +1,4 @@
-// might be importing / exporting them idk we'll find out! 
+const Users = require('./users');
+const Thoughts = require('./thought');
 
-// ./thought
-// ./User
-
-// model export
+module.exports = { Users, Thoughts };
