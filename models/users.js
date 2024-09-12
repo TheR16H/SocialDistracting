@@ -16,13 +16,13 @@ email: {
 thoughts: [
     {
        type: Schema.Types.ObjectId, 
-       ref: "Thoughts"
+       ref: "Thought"
     },
 ],
 friends:[
     {
         type: Schema.Types.ObjectId,
-            ref: "Users"
+            ref: "User"
         },
     ]
 }, {
@@ -36,5 +36,5 @@ userSchema.virtual("friendCount").get(function () {
     return this.friends.length;
 });
 
-const Users = model("Users", userSchema);
-module.exports = Users;
+const User = model("User", userSchema);
+module.exports = User;
