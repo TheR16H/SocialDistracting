@@ -7,12 +7,12 @@ const userSchema = new Schema({
     required: true,
     trim: true
 },
-// * `email`
-//   * String
-//   * Required
-//   * Unique
-//   * Must match a valid email address (look into Mongoose's matching validation)
-
+email: {
+    type: String,
+    unique: true,
+    required: true,
+    match: [/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,  "Your email was wrong, please enter a valid email address"]
+},
 // * `thoughts`
 //   * Array of `_id` values referencing the `Thought` model
 
