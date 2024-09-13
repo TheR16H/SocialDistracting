@@ -1,11 +1,7 @@
 const router = require("express").Router();
-const userRoutes = require("./api/user-routes");
-const thoughtRoutes = require("./api/thought-routes");
+const apiRoutes = require("./api"); // This imports the index.js from the api folder
 
-router.use("/api", apiRoutes);
-
-router.use("/api/users", userRoutes);
-router.use("/api/thoughts", thoughtRoutes);
+router.use("/api", apiRoutes); // This will now work
 
 router.use((req, res) => {
     res.status(404).send("404 Error");
