@@ -1,7 +1,7 @@
 # Social Distracting
 
 ## Description 
-<!-- [Social Distracting](https://github.com/TheR16H/social18) no deploy-->
+<!-- [Social Distracting](https://github.com/TheR16H/social18) -->
 
 ## Table of Contents
 
@@ -25,7 +25,11 @@
 <!-- to install any of the required npm packages just run the following command in your terminal. 
 ```
 npm i
-``` -->
+``` 
+then 
+``` 
+npm run start
+```-->
 
 ## Support
 Find me on [Github!](https://github.com/TheR16H) for any support or to see any of my other works.
