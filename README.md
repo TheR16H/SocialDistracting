@@ -1,12 +1,11 @@
 # Social Distracting
 
 ## Description 
-<!-- [Social Distracting](https://github.com/TheR16H/social18) -->
+I like to call this [Social Distracting](https://github.com/TheR16H/social18). its merely a backend social media site which allows users and thoughts to be created along with adding friends and deleting everything.
 
 ## Table of Contents
 
 - [Visuals](#visuals)
-- [Usage](#usage)
 - [Installation](#installation)
 - [Support](#support)
 - [Contributions](#contributions)
@@ -14,22 +13,18 @@
 - [License](#license)
 
 ## Visuals
- <!-- ![Screenshot](./public/assets/images/Visual-1-SS.png)
-![gif](./public/assets/images/visual2.gif) 
-![DEMO VIDEO](google.com) ⬅ Click me -->
-
-## Usage
-<!-- the intended usage -->
+ ![Screenshot](./Assets/Screenshot%202024-09-13%20011020.png)
+ ![DEMO VIDEO](https://drive.google.com/file/d/1od35JiA6y9l5dgIDq-uNfWROt_OvEczy/view?usp=sharing) ⬅ Click me <!--I need to update this video -->
 
 ## Installation
-<!-- to install any of the required npm packages just run the following command in your terminal. 
+to install any of the required npm packages just run the following command in your terminal. 
 ```
 npm i
 ``` 
 then 
 ``` 
 npm run start
-```-->
+```
 
 ## Support
 Find me on [Github!](https://github.com/TheR16H) for any support or to see any of my other works.
@@ -45,7 +40,7 @@ no contributions will be needed for this project.
 
 
 ## License
-<!-- MIT License 🔔
+MIT License 🔔
 
 Copyright (c) 2024 Rashawn Hall
 
@@ -65,4 +60,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE. -->
+SOFTWARE.
