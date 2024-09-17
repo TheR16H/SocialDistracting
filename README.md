@@ -15,7 +15,7 @@ I like to call this project "[Social Distracting](https://github.com/TheR16H/soc
 
 ## Visuals
  ![Screenshot](./Assets/Screenshot%202024-09-13%20011020.png)
- [DEMO VIDEO](https://drive.google.com/file/d/1zLzE9xnH-2AHoIexeVUi7IZoLylnsU3-/view?usp=sharing ) ⬅ Click me <!--I need to update this video -->
+ [DEMO VIDEO](https://drive.google.com/file/d/1zLzE9xnH-2AHoIexeVUi7IZoLylnsU3-/view?usp=sharing ) ⬅ Click me 
 
 ## Installation
 to install any of the required npm packages just run the following command in your terminal. 
